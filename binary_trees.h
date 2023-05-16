@@ -28,5 +28,6 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value); /** 2
 void binary_tree_delete(binary_tree_t *tree); /** 3 **/
 int binary_tree_is_leaf(const binary_tree_t *node); /** 4 **/
 int binary_tree_is_root(const binary_tree_t *node); /** 5 **/
+void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int)); /** 6 **/
 
 #endif
