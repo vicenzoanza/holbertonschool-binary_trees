@@ -16,20 +16,20 @@ p = node->n;
 	{
 		binary_tree_t *parent = node->parent;
 
-        if (parent->parent)
+	if (parent->parent)
 	{
-            binary_tree_t *grandparent = parent->parent;
+		binary_tree_t *grandparent = parent->parent;
 
 	if (grandparent->left && grandparent->right)
 		{
 		if (p > grandparent->left->n)
 		{
 			return (grandparent->left);
-                }
+		}
 		else
 		{
 			return (grandparent->right);
-                }
+		}
 		}
 	}
 	}
